@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+body {
+    background-color: rgb(230, 222, 222);
+}
+nav {
+    background-color: rgb(59, 57, 57);
+    color: rgb(167, 163, 163);
+    padding: 20px 0;
+    font-weight: 700;
+}
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 100;
+}
+#hero-text {
+    padding-top: 50px;
+    font-size: 2.5rem;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.options {
+    width: 400px;
+    padding: 20px;
+    position: relative;
+    margin-left: 230px;
+}
+.options input {
+    display: none;
+}
+.options label {
+    font-size: 21px;
+    cursor: pointer;
+}
+.options label::after {
+    content: '';
+    position: absolute;
+    left: -3.5%;
+    width: 17px;
+    height: 17px;
+    border: 2px solid rgb(72, 135, 228);
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .8);
+}
+.options label::before {
+    content: '';
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    left: -2.8%;
+    margin-left: 1.5px;
+    margin-bottom: 0.98px;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(72, 135, 228);
+    border-radius: 50%;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .8);
+    opacity: 0;
+    transition: opacity .4s;
+}
+.options input:checked ~ label::before {
+    opacity: 1;
+}
+.hero-btn {
+    margin: 50px auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+.btn {
+    display: inline-block;
+    color: #ffffff;
+    letter-spacing: 2px;
+    border: 2px solid rgb(72, 135, 228);
+    padding: 19.5px 32px;
+    position: relative;
+    background-color: rgb(72, 135, 228);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.btn:hover {
+    transition: 1s;
+}
+#btn {
+    padding: 19.5px 46px;
+}
